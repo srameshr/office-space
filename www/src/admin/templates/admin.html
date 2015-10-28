@@ -1,0 +1,30 @@
+<ion-view view-title="Admin">
+	<ion-content class="padding">
+		<div class="row full-height">
+			<div class="col col-20">
+				
+					<ion-item  class="icon ion-cube no-border add-blocks" ng-drag="true" data-allow-transform="true" ng-center-anchor="true">
+						<div><span>MEETING ROOM<span></div>
+					</ion-item>
+					<br />
+					<ion-item class="icon ion-android-restaurant no-border add-blocks">
+						<div><span>PANTRY<span></div>
+					</ion-item>
+					<br />
+					<ion-item class="icon ion-qr-scanner no-border add-blocks">
+						<div><span>DESKS<span></div>
+					</ion-item>
+					
+				
+			</div>    
+			<div class="col office-col border-dotted-thick" ng-drop="true" ng-drop-success="vm.onDropComplete($data,$event)">
+				<room ng-repeat="room in vm.rooms" avail="{{room.avail}}" adminmode="true"></room>
+				<div ng-show="vm.showAddHelp" class="help-large">
+					<h2>You have not added any rooms.</h2>
+					
+				</div>
+			</div>
+
+		</div>
+	</ion-content>
+</ion-view>

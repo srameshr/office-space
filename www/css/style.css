@@ -1,0 +1,202 @@
+/* Empty. Add your own CSS if you like */
+
+.full-scroll > .scroll {
+	height: 100%;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.modal > .bar-header {
+	left: 0;
+}
+.header-item {
+	padding-left: 2em;
+}
+
+.no-border {
+	border: none;
+}
+
+.border-dotted-thick {
+	border: 2px dotted #5b5b5b;
+	border-radius: 3px;
+}
+
+.white {
+	color: white;
+}
+
+.tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
+    margin-top: 1px;
+    border-width: 0px 0px 3px 0px !important;
+    border-style: solid;
+}
+
+.tabs-vertical > .tab-nav.tabs{
+    position: absolute !important;
+    top: 43px !important;
+    height: 100% !important;
+    width: 10em !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+            align-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* border-left-color: #0c63ee; */
+    border-top: none;
+}
+
+.tabs-vertical > .tab-nav.tabs  a.tab-item{
+    display:block !important;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    margin: 20px 0;
+    height: 110px;
+  }
+
+.tabs-vertical > .tab-nav.tabs  a.tab-item i {
+	font-size: 5em;
+    height: auto;
+}
+
+.tabs-vertical > .tab-nav.tabs  a.tab-item span {
+	font-weight: bold;
+    font-size: 1.2em
+}
+
+.has-tabs{
+  bottom: 0 !important;
+  left: 10em !important;
+}
+
+
+.room {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.avail {
+	background-color: rgba(5, 181, 84, 1);
+}
+
+.un-avail {
+	background-color: #FF4343;
+}
+
+.office-col {
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.add-blocks {
+	font-size: 5em;
+    text-align: center;
+}
+
+.add-blocks span {
+	font-size: 16px !important
+}
+
+.layer {
+	width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.layer > i {
+	font-size: 5em;
+	margin-top: 16px;
+}
+
+.room-title {
+	text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+.occupied {
+	text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.timings {
+	color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.booked {
+	color: #FF4343;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px 0 30px 0 !important;
+}
+.help-large {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.help-large h2 {
+	color: #737373;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/angular-toastr/css/angular-toastr.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- Parse -->
+    <script src="http://www.parsecdn.com/js/parse-latest.js"></script>
+    <!-- ionic/angularjs js -->
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/draggable/js/ng-draggable.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <script src="lib/moment/js/moment.js"></script>
+    <script src="lib/angular-moment/angular-moment.js"></script>
+
+    <script src="lib/angular-toastr/js/angular-toastr.tpls.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="src/app.module.js"></script>
+
+    <script src="src/blocks/logger/logger.module.js"></script>
+    <script src="src/blocks/logger/logger.js"></script>
+
+    <script src="src/blocks/exceptions/exception.module.js"></script>
+    <script src="src/blocks/exceptions/exception.provider.js"></script>
+    <script src="src/blocks/exceptions/exception.js"></script>
+
+    <script src="src/blocks/router/router.module.js"></script>
+    <script src="src/blocks/router/router-helper.provider.js"></script>
+
+    <script src="src/core/core.module.js"></script>
+    <script src="src/core/config.js"></script>
+    <script src="src/core/core.constants.js"></script>
+    <script src="src/core/core.route.js"></script>
+    <script src="src/core/core.data.js"></script>
+    <script src="src/core/core.storage.js"></script>
+    <script src="src/core/show-when.directive.js"></script>
+
+
+    <script src="src/menu/menu.module.js"></script>
+    <script src="src/menu/menu.route.js"></script>
+
+    <script src="src/space/space.module.js"></script>
+    <script src="src/space/space.controller.js"></script>
+    <script src="src/space/space.service.js"></script>
+    <script src="src/space/room.directive.js"></script>
+    <script src="src/space/space.route.js"></script>
+
+    <script src="src/admin/admin.module.js"></script>
+    <script src="src/admin/admin.controller.js"></script>
+    <script src="src/admin/admin.service.js"></script>
+    <script src="src/admin/admin.route.js"></script>
+
+    
+  </head>
+  <body ng-app="app">
+    <ion-nav-bar class="bar-stable" align-title="left">
+    </ion-nav-bar>
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

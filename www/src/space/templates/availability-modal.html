@@ -1,0 +1,47 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-stable">
+    	<div class="buttons">
+    		<button class="button button-clear icon ion-close" ng-click="vm.modal.hide()"></button>
+    	</div>
+      	<h1 class="title">{{vm.roomData.name}}</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+    	<form name="bookRoomForm" ng-submit="vm.bookRoom(vm.modal, bookRoomForm.$valid)" ng-if="vm.roomData.avail">
+		    <div class="list list-inset">
+		  		<div class="row">
+		  			<div class="col">
+		  				<label class="item item-input item-stacked-label">
+						    <span class="input-label">From Date</span>
+						    <input type="date" ng-model="vm.modal.fromDate" required>
+		  				</label>
+		  			</div>
+		  			<div class="col">
+		  				<label class="item item-input item-stacked-label">
+				    		<span class="input-label">From Time</span>
+				    		<input type="time" ng-model="vm.modal.fromTime" required>
+		  				</label>
+		  			</div>
+		  		</div>
+		  		<div class="row">
+		  			<div class="col">
+		  				<label class="item item-input item-stacked-label">
+						    <span class="input-label">To Date</span>
+						    <input type="date" ng-model="vm.modal.toDate" required>
+		  				</label>
+		  			</div>
+		  			<div class="col">
+		  				<label class="item item-input item-stacked-label">
+				    		<span class="input-label">To Time</span>
+				    		<input type="time" ng-model="vm.modal.toTime" required>
+		  				</label>
+		  			</div>
+		  		</div>
+			</div>
+			<input type="submit" class="button button-block" value="BOOK">
+		</form>
+		<div ng-if="!vm.roomData.avail">
+			<h1 class="booked">Booked</h1>
+			<button class="button button-block button-balanced" ng-click="vm.releaseRoom(vm.roomData)">RELASE</button>
+		</div>
+    </ion-content>
+  </ion-modal-view>

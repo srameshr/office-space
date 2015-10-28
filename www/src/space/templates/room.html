@@ -1,0 +1,24 @@
+<div class="room">
+  <!-- <span>{{room.name}}</span>
+  <span>Occupied from: {{room.duration.from | amCalendar}}</span>
+  <span>Occupied till: {{room.duration.to | amCalendar}}</span> -->
+  <div class="layer">
+  	<i class="icon ion-cube" ng-show="adminmode || usermode && room.avail"></i>
+  	<p class='room-title' ng-show="usermode && room.avail" style="text-decoration: underline">VACANT</p>
+  	<p class="room-title" ng-show="adminmode" style="text-decoration: underline" ng-click="vm.removeRoom(room)">REMOVE</p>
+
+  </div>
+
+  <p class="room-title padding-horizontal">{{room.name}}</p>
+  
+  <div ng-if="!room.avail && usermode">
+  	<p class="occupied">OCCUPIED</p>
+  	<br />
+  	<span class="white">FROM</span>
+
+  	<p class="timings">{{room.duration.from | amCalendar }} </p>
+
+  	<span class="white">TILL</span>
+  	<p class="timings">{{room.duration.to | amCalendar  }} </p>
+  </div>
+ </div>
